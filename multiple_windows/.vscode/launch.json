@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "cargo",
+            "args": ["run"],
+            "cwd": "${workspaceRoot}",
+            "env" : {
+                // "RUST_BACKTRACE" : "full",
+                // "RUST_BACKTRACE" : "1",
+                
+                // "RUST_LOG": "debug",
+                // "RUSTC_WRAPPER":"sccache",
+                // "RUSTFLAGS":"-C link-arg=-fuse-ld=lld",
+            }
+        },
+        
+        {
+            "name": "Release",
+            "type": "lldb",
+            "request": "launch",
+            "program": "cargo",
+            "args": [
+                "run", "--release", 
+                //"--features", "bevy/dynamic"
+            ],
+            // "stopAtEntry": false, "externalConsole": true,
+            "cwd": "${workspaceRoot}",
+            "env" : {
+                // "RUST_BACKTRACE" : "1",
+                // "RUST_BACKTRACE" : "full",
+                // "RUSTC_WRAPPER":"sccache",
+                // "RUSTFLAGS":"-C link-arg=-fuse-ld=lld",
+            }
+        }
+    ]
+}
