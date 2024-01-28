@@ -1,0 +1,11 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.accessibilitySupport": "off",
+    "debug.allowBreakpointsEverywhere": true,
+    "task.quickOpen.detail": false,
+    "task.quickOpen.skip": true,
+    "task.quickOpen.history": 1,
+    "terminal.integrated.showExitAlert": false,
+    "debug.terminal.clearBeforeReusing": true,
+    "terminal.integrated.confirmOnKill": "never",
+}
