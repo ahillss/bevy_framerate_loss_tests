@@ -64,7 +64,7 @@ fn show_fps_in_title(
     time: Res<Time>,
     mut time_accum:Local<f64>,
  ) {
-    let (fps,avg,smoothed) = diagnostics.get(FrameTimeDiagnosticsPlugin::FPS)
+    let (fps,avg,smoothed) = diagnostics.get(&FrameTimeDiagnosticsPlugin::FPS)
         .map(|x|(x.value().unwrap_or_default(),x.average().unwrap_or_default(),x.smoothed().unwrap_or_default()))
         .unwrap_or_default();
 
